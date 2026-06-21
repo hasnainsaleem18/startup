@@ -33,7 +33,12 @@
       "Bash(git symbolic-ref *)",
       "Bash(echo \"branch: $\\(git symbolic-ref --short HEAD\\)\")",
       "Bash(echo \"user: $\\(git config user.name\\) <$\\(git config user.email\\)>\")",
-      "Bash(mkdir -p ~/.autocommit ~/Library/LaunchAgents && echo \"dirs ready\")"
+      "Bash(mkdir -p ~/.autocommit ~/Library/LaunchAgents && echo \"dirs ready\")",
+      "Bash(git commit *)",
+      "Bash(ssh -o StrictHostKeyChecking=accept-new -T git@github-hasnain)",
+      "Bash(git ls-remote *)",
+      "Bash(git push *)",
+      "Bash(bash ~/.autocommit/commit.sh)"
     ]
   }
 }
