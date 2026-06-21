@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm view *)",
+      "Bash(npm install *)",
+      "Bash(npm audit *)",
+      "Bash(npm run *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(npx tsc *)",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(node dist/index.js)",
+      "Bash(curl -s http://localhost:4000/api/health)",
+      "Bash(curl -s http://localhost:4000/api/content)",
+      "Bash(curl -s -X POST http://localhost:4000/api/contact -H 'Content-Type: application/json' -d '{\"name\":\"Test User\",\"email\":\"test@example.com\",\"message\":\"Hello, I need bookkeeping help for my QBO account please.\"}')",
+      "Bash(curl -s -X POST http://localhost:4000/api/quote -H 'Content-Type: application/json' -d '{\"name\":\"x\",\"email\":\"bad\",\"message\":\"short\"}')",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s -o /dev/null -w \"frontend HTTP %{http_code}\\\\n\" http://localhost:3000)",
+      "Bash(kill %1)",
+      "Bash(pkill -f \"node dist/index.js\")",
+      "Bash(lsof -ti:4000)",
+      "Bash(echo \"backend stopped \\(port 4000 free: $\\(lsof -ti:4000 >/dev/null 2>&1 && echo no || echo yes\\)\\)\")",
+      "Bash(gh auth *)",
+      "Bash(git config *)",
+      "Bash(git --version)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//usr/local/bin/**)",
+      "Read(//Users/abidali/.ssh/**)",
+      "Bash(ssh -o StrictHostKeyChecking=accept-new -T git@github.com)",
+      "Bash(curl -s https://api.github.com/users/hasnainsaleem18)",
+      "Bash(ssh-keygen -t ed25519 -C \"hasnainsaleem18 auto-commit\" -f ~/.ssh/id_ed25519_hasnain -N \"\")",
+      "Bash(git init *)",
+      "Bash(git remote *)",
+      "Bash(git symbolic-ref *)",
+      "Bash(echo \"branch: $\\(git symbolic-ref --short HEAD\\)\")",
+      "Bash(echo \"user: $\\(git config user.name\\) <$\\(git config user.email\\)>\")",
+      "Bash(mkdir -p ~/.autocommit ~/Library/LaunchAgents && echo \"dirs ready\")"
+    ]
+  }
+}
