@@ -38,7 +38,25 @@
       "Bash(ssh -o StrictHostKeyChecking=accept-new -T git@github-hasnain)",
       "Bash(git ls-remote *)",
       "Bash(git push *)",
-      "Bash(bash ~/.autocommit/commit.sh)"
+      "Bash(bash ~/.autocommit/commit.sh)",
+      "Bash(python3 -m pip --version)",
+      "Read(//Users/abidali/Desktop/**)",
+      "Bash(python3.12 -m venv .venv)",
+      "Bash(.venv/bin/python -m pip install --upgrade pip)",
+      "Bash(.venv/bin/pip install *)",
+      "Bash(echo \"INSTALL_OK\")",
+      "Bash(.venv/bin/pip uninstall *)",
+      "Bash(.venv/bin/python -c ' *)",
+      "Bash(.venv/bin/pytest -q)",
+      "Bash(.venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8077)",
+      "Bash(echo \"started pid $!\")",
+      "Bash(curl -s -o /dev/null http://127.0.0.1:8077/health)",
+      "Bash(break)",
+      "Bash(curl -s http://127.0.0.1:8077/health)",
+      "Bash(curl -s http://127.0.0.1:8077/stats)",
+      "Bash(curl -s -F \"files=@data/sample_docs/product_faq.md\" -F \"files=@data/sample_docs/company_handbook.md\" http://127.0.0.1:8077/ingest)",
+      "Bash(kill 37332)",
+      "Bash(.venv/bin/python -c \"import langchain, langchain_core, langchain_chroma, fastembed, chromadb, fastapi, streamlit; print\\('versions: langchain', langchain.__version__, '| core', langchain_core.__version__\\)\")"
     ]
   }
 }
